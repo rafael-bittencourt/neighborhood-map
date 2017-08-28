@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>New Orleans - Central Business District</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="options-box">
+        <h1>Central Business District</h1>
+        <h2>New Orleans - Louisiana</h2>
+        <input id="search-area" placeholder="Enter your favorite area!" data-bind="textInput: filter, valueUpdate: 'afterkeydown'">
+        <ul class="list_locations menu_list" data-bind="foreach: { data: filteredItems}">
+          <li class="element_locations" data-bind="text: title, click: triggerMarker"></li>
+        </ul>
+        <div class="logo">
+          <img src="img/foursquare.png" alt="foursquare logo">
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="js/libs/knockout-3.4.2.js"></script>
+    <script src="js/libs/jquery-2.1.1.js"></script>
+    <script src="js/locations_app.js"></script>
+    <script src="js/locations_data.js"></script>
+    <script src="js/map_styles.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyCnp57XF34YoIvjNb_yN9o4jNRZdRJdOcg&v=3&callback=initMap" 
+        onerror="mapsError()">
+    </script>
+  </body>
+</html>
