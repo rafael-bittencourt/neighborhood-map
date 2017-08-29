@@ -5,7 +5,7 @@ Create a page showing a map of a neighborhood I'd like to visit displaying a lis
 The application was made using Google Maps and Foursquare APIs.
 
 ## Execution
-Download or clone the project and open the `dist/index.html` file in a web browser.
+Download or clone the project and open the `dist/index.html` file in a web browser or try the [live version](https://rafer23.github.io/neighborhood-map/dist)
 
 ## Central Business District - New Orleans - LA
 
