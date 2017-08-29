@@ -66,11 +66,10 @@ var Location = function(data) {
 		self.infoWindow.open(map, this); // open the infowindow on map
 		this.setIcon(makeMarkerIcon(MARKER_BOUNCE));
 		this.setAnimation(google.maps.Animation.BOUNCE); // trigger marker animation
-	});
-
-	this.infoWindow.addListener('closeclick', function() {
-		self.marker.setIcon(makeMarkerIcon(MARKER_ORIGINAL));
-		self.marker.setAnimation(null); // stop marker animation when infowindow is closed
+		setTimeout(function() {
+			self.marker.setIcon(makeMarkerIcon(MARKER_ORIGINAL));
+			self.marker.setAnimation(null); // stop marker animation after 2s
+		}, 2000);
 	});
 }
 
