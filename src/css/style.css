@@ -85,10 +85,17 @@ h1, h2 {
 			width: 100%;
 		}
 		.menu_list {
-			display: none;
+			margin: 0 auto;
+    		text-align: center;
 		}
         #map { 
         	order: 2; 
         	position: relative; 
+        }
+        .element_locations {
+        	display: inline-block;
+   			vertical-align: top;
+   			width: 48%;
+			font-size: 9px;
         }
     }
