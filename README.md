@@ -16,4 +16,8 @@ Download or clone the project and open the `dist/index.html` file in a web brows
 - Marker animation when a place is chosen;
 - Google Maps default style modified;
 - Responsive layout to run on tablets and cellphones.
+- Use [grunt](https://gruntjs.com/configuring-tasks) to: 
+	- Minify CSS and HTML files;
+	- Uglify JS;
+	- Optimize images;
 
